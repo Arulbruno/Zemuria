@@ -1,0 +1,38 @@
+#toast-container{
+    position:fixed;
+    top:30px;
+    right: 30px;
+    z-index: 1000;
+    /* color: black; */
+}
+.toast{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    min-width: 300px;
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    margin-bottom: 10px;
+    opacity: 0.5;
+    transition: opacity 0.5s,transform 0.5s;
+}
+.toast.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.toast.success{
+    background-color: rgb(0, 255, 38);
+}
+.toast.warning{
+    background-color: red;
+}
+.toast.error{
+    background-color: rgb(224, 161, 14);
+}
+
+
+/* The CSS styles the toast notifications, 
+positioning them fixed at the top-right corner with a high z-index for visibility. 
+Toasts have a flex layout, padding, and rounded corners, 
+with different background colors for success, warning, and error messages. 
+The .show class adds opacity and transform transitions for smooth appearance. */

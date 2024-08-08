@@ -1,0 +1,28 @@
+.grid{
+    display: grid;
+    gap:32px
+    /* padding:32px; */
+    /* grid-template-column repeat(auto-fill minmax(360px,1vh)); */
+}
+.grid-item{
+    height:360px;
+    background-color:lightblue;
+    }
+    @media(max-width:769px){
+    .grid{
+    gap:12px;
+    display: grid;
+    padding :14px;
+    /* grid-template-column:repeat(auto-fill); */
+    }
+    .grid-item{
+    height:250px;
+    background-color:lightblue;
+    }
+    
+    }
+    /* This CSS code defines a grid layout with a gap between items, 
+    adjusting the layout and spacing for smaller screens (below 769px). 
+    The .grid class sets the grid display and spacing, 
+    while the .grid-item class specifies the height and background color for grid items. 
+    The media query adjusts the gap, padding, and item height for mobile devices. */
